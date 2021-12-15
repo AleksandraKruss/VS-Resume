@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+* {margin: 0; padding: 0;}
+
+body {
+    background-color: linen;
+    color: black;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 20px 23% 20px 23%;
+    border-left: 2px solid rgb(157, 157, 157);
+    border-right: 2px solid rgb(157, 157, 157);
+}
+
+@media (max-width: 1200px) {
+    body {
+        margin: 20px 7% 20px 7%;
+    }
+}
+
+.divBody {
+    background-color: white;
+    padding: 30px;  
+    box-shadow: 4px 4px 28px black;  
+}
+
+hr {
+    size: 2px;
+    width: 100%;
+    color: rgb(157, 157, 157);
+    background-color: rgb(157, 157, 157);
+    border-color: rgb(157, 157, 157);
+}
+
+.zagolovok {
+    color: rgb(157, 157, 157);
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: blueviolet;
+    text-decoration: underline;
+}
+
+/*Меню*/
+
+.menu {
+    display: grid; 
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    margin: 0px 0px 20px 0px;
+}
+
+.menu button {
+    /*float: top;*/
+    padding: 10px;
+    background: linear-gradient(to top, rosybrown, 15%, rgba(250, 240, 230, 0.575));
+    border: 1px solid rosybrown;
+    border-radius: 5px;
+    box-shadow: 4px 4px 14px lavender;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+/*Верхний блок*/
+
+.avatar {
+    border-radius: 15px;
+    margin: 0px 30px 30px 0px;
+    box-shadow: 4px 4px 28px gray;
+    object-fit: cover;
+    border: 1px solid rosybrown;
+}
+
+.headerTable td:nth-child(1) {
+    color: rgb(157, 157, 157);
+    padding-right: 15px;
+}
+
+.headerInfo {
+    display: flex;
+}
+
+@media (max-width: 900px) {
+    .headerInfo {
+        display: block;
+        text-align: center;
+    }
+    .headerTable {
+        margin: auto;
+        margin-bottom: 15px;
+    }
+    .headerTable td {
+        text-align: left;
+    }
+    .avatar {
+        margin: 20px 0px 20px 0px;
+    }
+}
+
+/*Средний блок*/
+
+.card {
+    background-color: rgba(250, 240, 230, 0.575);
+    border: 1px solid rosybrown;
+    border-radius: 10px;
+    margin: 0px 0px 20px 0px;
+    padding: 15px 20px 15px 15px;
+    text-align: justify;
+    box-shadow: 4px 4px 14px lavender;
+}
+
+.card li {
+    margin-left: 25px;
+}
+
+.card h2 {
+    color: rosybrown;
+    font-size: 16px;
+    font-family: 'Comfortaa', cursive;
+    text-decoration: underline;
+    margin: 0px 0px 10px 0px;
+}
+
+.divCards {
+    display: grid;
+    grid-template-columns: 50% 50%;   
+    margin: 20px 0px 0px 0px;
+}
+
+.divCardLeft {
+    margin-right: 10px;
+}
+
+.divCardRight {
+    margin-left: 10px;
+}
+
+@media (max-width: 900px) {
+    .divCards {
+        display: block;
+    }
+    .divCardLeft {
+        margin-right: 0px;
+    }
+    .divCardRight {
+        margin-left: 0px;
+    }
+}
+
+
+/*Нижний блок*/
+/*
+.footerInput {
+    display: grid;
+    grid-template-columns: 85px 385px;    
+}
+
+.footerInput label {
+    padding: 10px 0px 10px 0px ;
+}
+
+.footerInput input {
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 16px;
+    border: 1px solid rosybrown;
+    margin: 0px 0px 5px 0px;
+    padding: 10px;
+    border-radius:10px;
+    box-shadow: 4px 4px 14px lavender;
+}
+
+.footerInput input :hover{
+    border: 1px solid rosybrown;
+}
+
+textarea {
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%;
+    resize: none;
+    font-family: inherit;
+    font-size: 16px;
+    border: 1px solid rosybrown;
+    border-radius:10px;
+    box-shadow: 4px 4px 14px lavender;
+}
+
+#tosend {
+    padding: 10px;
+    margin: 10px 0px 0px 0px;
+    background: linear-gradient(to top, rosybrown, 20%, rgba(250, 240, 230, 0.575));
+    border: 1px solid rosybrown;
+    border-radius: 5px;
+    box-shadow: 4px 4px 14px lavender;
+    text-align: center;
+    width: 150px;
+}*/
+
+/*Стрелка*/
+/*
+.arrow {
+    margin: 40px 0px 10px 0px;
+    width: 38px;
+    height: 100px;
+}
+.arrow span {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-bottom: 4px solid #337AB7;
+    border-right: 4px solid #337AB7;
+    transform: rotate(45deg);
+    margin: -16px 0;
+    animation: arrow 2s infinite;
+}
+.arrow span:nth-child(2){
+    animation-delay: -0.2s;
+}
+.arrow span:nth-child(3){
+    animation-delay: -0.4s;
+}
+@keyframes arrow {
+    0%{
+        opacity: 0;
+        transform: translate(0,-20px) rotate(45deg);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: translate(0,20px) rotate(45deg);
+    }
+}*/
